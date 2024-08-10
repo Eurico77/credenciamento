@@ -2,15 +2,13 @@
   "name": "credenciamento-app",
   "version": "0.1.0",
   "private": true,
-
-  "scripts": {
+ "scripts": {
   "dev": "next dev",
   "seed": "node --loader ts-node/esm prisma/seed.mjs",
   "start": "next start",
   "lint": "next lint",
   "migrate": "prisma migrate deploy",
-  "generate": "prisma generate",
-  "build": "npm run generate && next build"
+  "build": "prisma generate && next build"
 },
   "dependencies": {
     "@prisma/client": "^5.18.0",
@@ -20,7 +18,6 @@
     "prisma": "^5.18.0",
     "react": "^18",
     "react-dom": "^18"
-    
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
